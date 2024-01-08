@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Select slot preference</title>
+    <!-- Required styles for Material Web -->
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        h5,span{
+            color:white;
+        }
+        .container {
+            background-image : url('popup-bg.png')
+        }
+        body {
+            min-width: 400px;
+            max-width: 100%;
+            position: relative;
+            vertical-align:middle;
+        }
+    </style>
+</head>
+<body>
+<div class="container rounded">
+    <div class="row" style="padding: 10px">
+        <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12 " id = "content1" >
+            <h5> Provide your slot preference for automatic booking</h5>
+        </div>
+
+    </div>
+    <div class="row" style="padding: 10px">
+        <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12 " id = "content2" >
+            <span>Preferred start date</span>
+            <input type = "date" class="date" id="slotstartdate" name = "startdate"/>
+        </div>
+
+    </div>
+    <div class="row" style="padding: 10px">
+        <div class = "col-xs-12 col-sm-12 col-md-12 col-lg-12 " id = "content3" >
+            <span>Preferred end date</span>
+            <input type = "date" id="slotenddate" name = "enddate"/>
+            <p >  </p>
+        </div>
+    </div>
+</div>
+<script src ="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+</body>
+</html>

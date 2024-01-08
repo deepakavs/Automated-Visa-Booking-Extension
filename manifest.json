@@ -1,0 +1,30 @@
+{
+  "name": "Book US visa slot",
+  "description": "Book visa slot with a breeze",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://cgifederal.secure.force.com/scheduleappointment*"],
+      "js": ["jquery-3.6.0.min.js", "booking.js"]
+    }
+  ],
+  "permissions": [
+    "notifications",
+    "storage",
+    "activeTab",
+    "tabs",
+    "http://*/",
+    "https://*/"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "visastamp.png",
+      "32": "visastamp.png"
+    }
+  }
+}
